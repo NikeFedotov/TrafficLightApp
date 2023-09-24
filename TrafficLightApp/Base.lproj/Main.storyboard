@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,26 +13,35 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TrafficLightApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r69-Tm-2fk">
-                                <rect key="frame" x="121" y="72" width="150" height="150"/>
+                                <rect key="frame" x="117" y="33" width="86.5" height="86.5"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="r69-Tm-2fk" secondAttribute="height" multiplier="1:1" id="E9K-Q4-uol"/>
+                                </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="buC-D4-zkm">
-                                <rect key="frame" x="121" y="281" width="150" height="150"/>
+                                <rect key="frame" x="117" y="178.5" width="86.5" height="86.5"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="buC-D4-zkm" secondAttribute="height" multiplier="1:1" id="Wtu-92-M4w"/>
+                                </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rpu-XW-TAm">
-                                <rect key="frame" x="121" y="490" width="150" height="150"/>
+                                <rect key="frame" x="117" y="324" width="86.5" height="86.5"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Rpu-XW-TAm" secondAttribute="height" multiplier="1:1" id="oRY-ep-meR"/>
+                                </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gBB-eA-T3G">
-                                <rect key="frame" x="111" y="699" width="171" height="61"/>
+                                <rect key="frame" x="74.5" y="480.5" width="171" height="61"/>
                                 <color key="backgroundColor" systemColor="linkColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="171" id="hQe-Ps-8ic"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="171" id="xya-fO-2cb"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="41"/>
                                 <color key="tintColor" red="0.94901967050000002" green="0.94117647410000005" blue="0.9529411793" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -46,21 +55,17 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="labelColor"/>
                         <constraints>
-                            <constraint firstItem="buC-D4-zkm" firstAttribute="top" secondItem="r69-Tm-2fk" secondAttribute="bottom" constant="59" id="GA6-eS-BiC"/>
-                            <constraint firstItem="gBB-eA-T3G" firstAttribute="top" secondItem="Rpu-XW-TAm" secondAttribute="bottom" constant="59" id="In5-qh-yOE"/>
-                            <constraint firstItem="Rpu-XW-TAm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="121" id="MNB-Qn-rr8"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="buC-D4-zkm" secondAttribute="trailing" constant="122" id="NNq-xG-tmf"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Rpu-XW-TAm" secondAttribute="trailing" constant="122" id="NlP-Ce-3b6"/>
-                            <constraint firstItem="r69-Tm-2fk" firstAttribute="height" secondItem="buC-D4-zkm" secondAttribute="height" id="QBn-EN-SDo"/>
-                            <constraint firstItem="r69-Tm-2fk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="13" id="V5n-Zc-b09"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="r69-Tm-2fk" secondAttribute="trailing" constant="122" id="dMw-96-WQ0"/>
-                            <constraint firstItem="gBB-eA-T3G" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eOf-U5-vgw"/>
-                            <constraint firstItem="buC-D4-zkm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="121" id="gQC-s1-oVv"/>
-                            <constraint firstItem="r69-Tm-2fk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="121" id="kes-oR-1Cs"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gBB-eA-T3G" secondAttribute="bottom" constant="58" id="lbh-H7-xZq"/>
-                            <constraint firstItem="Rpu-XW-TAm" firstAttribute="top" secondItem="buC-D4-zkm" secondAttribute="bottom" constant="59" id="ppE-dv-88k"/>
-                            <constraint firstItem="gBB-eA-T3G" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0715962" id="r50-kN-SMU"/>
-                            <constraint firstItem="buC-D4-zkm" firstAttribute="height" secondItem="Rpu-XW-TAm" secondAttribute="height" id="yyf-pv-Gk1"/>
+                            <constraint firstItem="Rpu-XW-TAm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2Nw-uq-FbF"/>
+                            <constraint firstItem="gBB-eA-T3G" firstAttribute="top" secondItem="Rpu-XW-TAm" secondAttribute="bottom" constant="70" id="93O-C5-qVR"/>
+                            <constraint firstItem="buC-D4-zkm" firstAttribute="top" secondItem="r69-Tm-2fk" secondAttribute="bottom" constant="59" id="INy-Bm-5lI"/>
+                            <constraint firstItem="buC-D4-zkm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IZW-wm-imn"/>
+                            <constraint firstItem="gBB-eA-T3G" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Lio-rP-sgG"/>
+                            <constraint firstItem="buC-D4-zkm" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.152289" id="TMY-JZ-ev9"/>
+                            <constraint firstItem="Rpu-XW-TAm" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.152289" id="X9U-2A-Isa"/>
+                            <constraint firstItem="r69-Tm-2fk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="13" id="dHi-AV-gEQ"/>
+                            <constraint firstItem="Rpu-XW-TAm" firstAttribute="top" secondItem="buC-D4-zkm" secondAttribute="bottom" constant="59" id="jrA-3i-ZS1"/>
+                            <constraint firstItem="r69-Tm-2fk" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.152289" id="qNN-ht-L1s"/>
+                            <constraint firstItem="r69-Tm-2fk" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="rqS-fu-qD1"/>
                         </constraints>
                     </view>
                     <connections>
@@ -72,7 +77,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="72.51908396946564" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="71.25" y="3.1690140845070425"/>
         </scene>
     </scenes>
     <resources>
